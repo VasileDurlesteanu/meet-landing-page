@@ -11,106 +11,115 @@
 
 body {
     position: relative;
-/* width: 1440px;
-height: 1895px; */
 
-background: #FAFAFA;
-    min-height: 100vh;
-    min-width: 1000vw;
+    background: #FAFAFA;
+    max-height: 195vh;
+    max-width: 75vw;
     margin: 0;
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column; */
+    overflow-x: hidden;
 }    
 
 header {
     position: absolute;
     top: 80px;
     margin: 0;
-    /* display: grid;
-    justify-content: center;
-    justify-items: center; */
-    /* grid-template-columns: repeat(3, 33vw);
-    grid-template-rows: repeat(2, 10vh); */
 }
 
 .meet-logo {
     position: absolute;
     width: 119px;
     height: 28px;
-    left: 661px;
+    left: 845px;
     top: 80px;
 }
 
 .group4 {
     /* Group 4 */
+}
 
-
+.header-content {
     position: absolute;
-    width: 100%;
-    /* height: 358px; */
-    left: -32px;
-    /* top: 169px; */
-    /* display: flex; */
+    width: 540px;
+    height: 304px;
+    left: 650px;
+    top: 216px; 
 }
 
 .image-hero-left {
     position: absolute;
     top: 169px;
+    left: -32px;
 }
 
 .image-hero-right {
     position:absolute;
     top: 224px;
-    left: 1362px;
+    left: 1545px;
+    
 }
 
 h1 {
-    /* Group Chat for Every */
-    position: absolute;
-    width: 445px;
-    height: 128px;
-    left: 498px;
-    top: 216px;
-
     font-family: 'Red Hat Display';
     font-style: normal;
     font-weight: 900;
     font-size: 64px;
     line-height: 64px;
-    /* or 100% */
-
     text-align: center;
-
     color: #28283D;
 }
 
 .meet-content {
-    /* Meet makes it easy t */
-    position: absolute;
-    width: 540px;
-    height: 52px;
-    left: 450px;
-    top: 378px;
-
     font-family: 'Red Hat Display';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
-    /* or 144% */
-
     text-align: center;
-
     color: #87879D;
 }
 
 .header-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.download {
+    background-color: var(--acapulco-cliffs);
+    border-radius: 29px;
+    border-style: none;
+    padding: 16px 40px;
+    margin-right: 16px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.what-is-it {
+    background-color: var(--lusty-lavender);
+    border-radius: 29px;
+    border-style: none;
+    padding: 16px 29px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+
+.circleLine {
     position: absolute;
-    width: 348px;
-    height: 58px;
-    left: 546px;
-    top: 462px;
+margin: auto 900px;
+}
+.path {
+    height: 100px;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    border-left: 1px solid #87879D;
 }
 
 main {
