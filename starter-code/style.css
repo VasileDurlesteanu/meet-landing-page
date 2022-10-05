@@ -1,4 +1,5 @@
 /* color naming with https://colornamer.robertcooper.me/*/
+/* https://stackoverflow.com/questions/1179928/how-can-i-put-a-vertical-line-down-the-center-of-a-div */
 :root {
     --acapulco-cliffs: #4D96A9;
     --silverpine-cyan: #8FE3F9;
@@ -113,13 +114,31 @@ h1 {
 
 .circleLine {
     position: absolute;
-margin: auto 900px;
+    margin: auto 900px;
 }
 .path {
     height: 100px;
     mix-blend-mode: normal;
     opacity: 0.25;
-    border-left: 1px solid #87879D;
+	background: linear-gradient(to right, 
+	                              transparent 0%, 
+	                              transparent calc(50% - 0.81px), 
+	                              var(--mandrake) calc(50% - 0.8px), 
+                                  var(--mandrake) calc(50% + 0.8px), 
+	                              transparent calc(50% + 0.81px), 
+	                              transparent 100%); 
+}
+
+.number1 {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--mandrake);
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    border-radius: 50px;
+    padding: 10px 15px;
 }
 
 main {
