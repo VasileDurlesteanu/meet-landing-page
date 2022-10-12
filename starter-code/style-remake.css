@@ -25,7 +25,6 @@ body {
 header {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3% ;
-    /* grid-template-rows: repeat(2, 18.938rem); */
     grid-template-rows: 10rem 22.4rem;
 }
 
@@ -50,7 +49,7 @@ h1 {
     color: #28283D;
 }
 
-.meet-content {
+p {
     font-family: 'Red Hat Display';
     font-style: normal;
     font-weight: 500;
@@ -95,22 +94,133 @@ h1 {
 main {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3% ;
-    /* grid-template-rows: repeat(2, 18.938rem); */
     grid-template-rows: 10rem 22.4rem 22.4rem;
+    margin-top: 110px;
 }
 
 .circle-line {
-    grid-column-start: 1;
-grid-column-end: 3;
+    grid-column: 2 / span 1;
     justify-self: center;
     align-self: center;
 }
 
 .image-container {
-    grid-row: 2 / span 2;
-    grid-column: 2 / span 2;
+    grid-column-start: span 3;
+    justify-self: center;
+    align-self: center;
 }
+
+.main-content {
+    width: 540px;
+    grid-row: 3 / span 2;
+    grid-column: 2 / span 1;
+    justify-self: center;
+    align-self: center;
+}
+
 .box-img {
     width: 255px;
     height: 242px;
+    border-radius: 8px;
+    margin-right: 28px;
 }
+
+.lastChild {
+    margin: 0;
+}
+.path {
+    height: 100px;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+	background: linear-gradient(to right, 
+	                              transparent 0%, 
+	                              transparent calc(50% - 0.81px), 
+	                              var(--mandrake) calc(50% - 0.8px), 
+                                  var(--mandrake) calc(50% + 0.8px), 
+	                              transparent calc(50% + 0.81px), 
+	                              transparent 100%); 
+}
+
+.number1, .number2 {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--mandrake);
+    background: var(--white);
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    border-radius: 50px;
+    padding: 10px 15px;
+}
+
+h3 {    
+    font-family: 'Red Hat Display';
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;    
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--acapulco-cliffs); 
+}
+
+h2 {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+    color: var(--maritime-blue);
+    margin: 0 47px;
+}
+
+.send-messages-content {
+    text-align: center;
+    margin: 32px 10px;
+}
+
+footer {
+    height: 308px;
+    margin-top: 184px;
+    background: linear-gradient(0deg, rgba(77,150,169,0.8), rgba(77,150,169,0.8)),  url(./assets/desktop/image-footer.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3% ;
+    grid-template-rows: 10% 90%;
+}
+
+.circle-line-second {
+    grid-row: 1;
+    grid-column: 2;
+    align-self: end;
+}
+
+.number2 {
+    border-radius: 53px;
+    max-width: 1.067rem;
+    padding: 10px 17px 10px 13px;
+}
+
+.experience-more {
+    grid-row: 2;
+    grid-column: 1;
+    color: var(--white);
+}
+
+.footer-content {
+    grid-row: 2;
+    grid-column: 2;
+    color: var(--white);
+}
+
+.download-footer {
+    grid-row: 2;
+    grid-column: 3;
+    align-self: center;
+    background: #855FB1;
+    justify-self: center;
+}
+
+
