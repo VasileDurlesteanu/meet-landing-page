@@ -1,165 +1,281 @@
 /* color naming with https://colornamer.robertcooper.me/*/
 /* https://stackoverflow.com/questions/1179928/how-can-i-put-a-vertical-line-down-the-center-of-a-div */
 :root {
-    --acapulco-cliffs: #4D96A9;
-    --silverpine-cyan: #8FE3F9;
-    --lusty-lavender: #855FB1;
-    --lavender-fragrance: #D9B8FF;
-    --maritime-blue: #28283D;
-    --mandrake: #87879D;
-    --white: #FAFAFA;
+  --acapulco-cliffs: #4d96a9;
+  --silverpine-cyan: #8fe3f9;
+  --lusty-lavender: #855fb1;
+  --lavender-fragrance: #d9b8ff;
+  --maritime-blue: #28283d;
+  --mandrake: #87879d;
+  --white: #fafafa;
 }
 
 body {
-    position: relative;
-    background: #FAFAFA;
-    max-height: 195vh;
-    max-width: 75vw;
-    margin: 0;
-    overflow-x: hidden;
-    display: flex;
-}    
+  position: relative;
+  background: #fafafa;
+  max-height: 195vh;
+  max-width: 180vw;
+  margin: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
 
 header {
-    position: absolute;
-    top: 80px;
-    margin: 0;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 10rem 22.4rem;
 }
 
 .meet-logo {
-    position: absolute;
-    width: 119px;
-    height: 28px;
-    left: 845px;
-    top: 80px;
-}
-
-.group4 {
-    /* Group 4 */
-}
-
-.header-content {
-    position: absolute;
-    width: 540px;
-    height: 304px;
-    left: 650px;
-    top: 216px; 
-}
-
-.image-hero-left {
-    position: absolute;
-    top: 169px;
-    left: -32px;
+  grid-column: span 3;
+  justify-self: center;
+  align-self: center;
 }
 
 .image-hero-right {
-    position:absolute;
-    top: 224px;
-    left: 1545px;
-    
+  justify-self: end;
+  align-self: flex-end;
 }
 
 h1 {
-    font-family: 'Red Hat Display';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 64px;
-    line-height: 64px;
-    text-align: center;
-    color: #28283D;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 64px;
+  text-align: center;
+  color: #28283d;
 }
 
-.meet-content {
-    font-family: 'Red Hat Display';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
-    text-align: center;
-    color: #87879D;
+p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #87879d;
 }
 
 .header-buttons {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .download {
-    background-color: var(--acapulco-cliffs);
-    border-radius: 29px;
-    border-style: none;
-    padding: 16px 40px;
-    margin-right: 16px;
-    font-family: 'Red Hat Display';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 26px;
-    color: #FFFFFF;
+  background-color: var(--acapulco-cliffs);
+  border-radius: 29px;
+  border-style: none;
+  padding: 16px 40px;
+  margin-right: 16px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .what-is-it {
-    background-color: var(--lusty-lavender);
-    border-radius: 29px;
-    border-style: none;
-    padding: 16px 29px;
-    font-family: 'Red Hat Display';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 26px;
-    color: #FFFFFF;
-}
-
-
-.circleLine {
-    position: absolute;
-    margin: auto 900px;
-    top: 110px;
-}
-.path {
-    height: 100px;
-    mix-blend-mode: normal;
-    opacity: 0.25;
-	background: linear-gradient(to right, 
-	                              transparent 0%, 
-	                              transparent calc(50% - 0.81px), 
-	                              var(--mandrake) calc(50% - 0.8px), 
-                                  var(--mandrake) calc(50% + 0.8px), 
-	                              transparent calc(50% + 0.81px), 
-	                              transparent 100%); 
-}
-
-.number1 {
-    font-family: 'Red Hat Display';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 26px;
-    color: var(--mandrake);
-    border: 1px solid rgba(135, 135, 157, 0.25);
-    border-radius: 50px;
-    padding: 10px 15px;
-}
-
-.image-container {
-    position: absolute;
-    top: 314px;
-    margin: 0 365px;
-    display: flex;
-}
-
-.box-img {
-    width: 255px;
-    height: 242px;
+  background-color: var(--lusty-lavender);
+  border-radius: 29px;
+  border-style: none;
+  padding: 16px 29px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 main {
-    position: absolute;
-    top: 637px;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 10rem 22.4rem 22.4rem;
+  margin-top: 110px;
+}
+
+.circle-line {
+  grid-column: 2 / span 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.image-container {
+  grid-column-start: span 3;
+  justify-self: center;
+  align-self: center;
+  gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-content {
+  width: 540px;
+  grid-row: 3 / span 2;
+  grid-column: 2 / span 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.box-img {
+  width: 255px;
+  height: 242px;
+  border-radius: 8px;
+  /* margin-right: 1.4vw; */
+  position: relative;
+}
+
+.lastChild {
+  margin: 0;
+}
+.path {
+  height: 100px;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent calc(50% - 0.81px),
+    var(--mandrake) calc(50% - 0.8px),
+    var(--mandrake) calc(50% + 0.8px),
+    transparent calc(50% + 0.81px),
+    transparent 100%
+  );
+}
+
+.number1,
+.number2 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--mandrake);
+  background: var(--white);
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  border-radius: 50px;
+  padding: 10px 15px;
+}
+
+h3 {
+  font-family: "Red Hat Display";
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--acapulco-cliffs);
+}
+
+h2 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+  color: var(--maritime-blue);
+  margin: 0 47px;
+}
+
+.send-messages-content {
+  text-align: center;
+  margin: 32px 10px;
 }
 
 footer {
-    position: absolute;
-    top: 1475px;
+  height: 308px;
+  margin-top: 184px;
+  background: linear-gradient(
+      0deg,
+      rgba(77, 150, 169, 0.8),
+      rgba(77, 150, 169, 0.8)
+    ),
+    url(./assets/desktop/image-footer.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 10% 90%;
+}
+
+.circle-line-second {
+  grid-row: 1;
+  grid-column: 2;
+  align-self: end;
+}
+
+.number2 {
+  border-radius: 53px;
+  max-width: 1.067rem;
+  padding: 10px 17px 10px 13px;
+}
+
+.experience-more {
+  grid-row: 2;
+  grid-column: 1;
+  color: var(--white);
+}
+
+.footer-content {
+  grid-row: 2;
+  grid-column: 2;
+  color: var(--white);
+}
+
+.download-footer {
+  grid-row: 2;
+  grid-column: 3;
+  align-self: center;
+  background: var(--lusty-lavender);
+  justify-self: center;
+}
+
+.download:active {
+  box-shadow: 2px 2px 5px #fc894d;
+  background-color: #71c0d4;
+}
+
+.download-footer:active {
+  box-shadow: 2px 2px 5px #fc894d;
+  background-color: #b18bdd;
+}
+
+.what-is-it:active {
+  box-shadow: 2px 2px 5px #fc894d;
+  background-color: #b18bdd;
+}
+
+@media (max-width: 810px) {
+  header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10rem 22.4rem 22.4rem;
+  }
+
+  .header-content {
+    grid-row-start: 3;
+    grid-column: span 2;
+    max-width: 550.109px;
+    justify-self: center;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .box-img {
+    width: 164px;
+    height: 156px;
+  }
+}
+
+@media (max-width: 375px) {
 }
