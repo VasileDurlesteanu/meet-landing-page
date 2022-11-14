@@ -39,6 +39,8 @@ header {
   align-self: flex-end;
 }
 
+
+
 h1 {
   font-family: "Red Hat Display";
   font-style: normal;
@@ -292,5 +294,16 @@ footer {
   }
 }
 
-@media (max-width: 375px) {
+@media (min-width: 375px) {
+  html {
+    width: fit-content;
+  }
+  header {
+    width: fit-content;
+    grid-template-rows: 10rem 12.4rem 22.4rem;
+  }
+
+  .image-hero-right, .image-hero-left {
+    width: 60vw;
+  }
 }
