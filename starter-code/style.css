@@ -294,7 +294,7 @@ footer {
   }
 }
 
-@media (min-width: 375px) {
+@media (max-width: 767px) {
   html {
     width: fit-content;
   }
@@ -304,6 +304,6 @@ footer {
   }
 
   .image-hero-right, .image-hero-left {
-    width: 60vw;
+    width: 48.5vw;
   }
 }
