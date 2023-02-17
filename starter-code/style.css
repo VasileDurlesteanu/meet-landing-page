@@ -13,7 +13,7 @@
 body {
   position: relative;
   background: #fafafa;
-  max-height: 195vh;
+  max-height: 300vh;
   max-width: 180vw;
   margin: 0;
   overflow-x: hidden;
@@ -214,6 +214,8 @@ footer {
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-template-rows: 10% 90%;
+  align-items: center;
+  justify-items: end;
 }
 
 .circle-line-second {
@@ -229,16 +231,20 @@ footer {
 }
 
 .experience-more {
-  grid-row: 2;
   grid-column: 1;
-  color: var(--white);
 }
 
 .footer-content {
-  grid-row: 2;
   grid-column: 2;
-  color: var(--white);
 }
+
+.experience-more, .footer-content {
+  grid-row: 2;
+  color: var(--white);
+  text-align: start;
+  width: 21.875rem;
+  margin: 0;
+} 
 
 .download-footer {
   grid-row: 2;
