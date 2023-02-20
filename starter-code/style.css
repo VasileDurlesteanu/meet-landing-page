@@ -354,6 +354,15 @@ footer {
     max-width: 457px;
     overflow: hidden;
   }
+
+  h1 {
+    max-width: 21.875rem;
+    margin: 0;
+  }
+
+  main {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 767px) {
