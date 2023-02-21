@@ -314,21 +314,25 @@ footer {
 
 @media (max-width: 820px) {
   footer {
-    height: 408px;
+    height: 400px;
     grid-template-columns: 0fr 1fr;
-    grid-template-rows: 10% 35% 25% 25% 5%;
+    grid-template-rows: 6% 35% 25% 25% 9%;
+    justify-items: center;
+    margin-top: 120px;
   }
 
   .experience-more {
     grid-row: 2;
     grid-column: 2;
     margin: 20px 200px;
+    text-align: center;
   }
   
   .footer-content {
     grid-row: 3;
     grid-column: 2;
-    padding: 0 120px;
+    width: 575px;
+    text-align: center;
   }
   
   .download-footer {
