@@ -355,8 +355,12 @@ footer {
 
 /* iPad Mini */
 @media (max-width: 768px) {
+  html {
+    width: fit-content;
+  }
   header {
-    grid-template-columns: fit-content(50%) fit-content(50%);
+    grid-template-columns: 100%;
+    grid-template-rows: 6rem 18rem 22.4rem;
   }
 
   .header-content {
@@ -379,7 +383,7 @@ footer {
   }
   .image-hero-tablet {
     display: block;
-    width: 100vw;
+    width: 100%;
   }
 
   footer {
@@ -389,15 +393,5 @@ footer {
         rgba(77, 150, 169, 0.8)
       ),
       url(./assets/tablet/image-footer.jpg);
-  }
-}
-
-@media (max-width: 767px) {
-  html {
-    width: fit-content;
-  }
-  header {
-    width: fit-content;
-    grid-template-rows: 10rem 12.4rem 22.4rem;
   }
 }
