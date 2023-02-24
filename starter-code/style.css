@@ -13,13 +13,13 @@
 body {
   position: relative;
   background: #fafafa;
-  max-height: 300vh;
+  /* max-height: 300vh; */
   max-width: 180vw;
   margin: 0;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
 }
 
 header {
@@ -291,18 +291,18 @@ footer {
   h1 {
     font-size: 48px;
   }
-
+/* 
   .box-img {
     width: 164px;
     height: 156px;
-  }
+  } */
 
   .image-hero-right {
     align-self: flex-start;
   }
 
-  .main {
-    grid-template-rows: 10rem 12.4rem 12.4rem;
+  main {
+    grid-template-rows: 10rem 32.4rem 12.4rem;
   }
 
   .main-content {
@@ -318,6 +318,11 @@ footer {
 }
 
 @media (max-width: 820px) {
+
+  main {
+    grid-template-rows: 10rem 12.4rem 12.4rem;
+  }
+
   footer {
     height: 400px;
     grid-template-columns: 0fr 1fr;
@@ -377,6 +382,11 @@ footer {
     margin-top: 0;
   }
 
+  .box-img {
+    width: 151px;
+    height: 143px;
+  }
+
   .image-hero-right,
   .image-hero-left {
     display: none;
@@ -394,4 +404,57 @@ footer {
       ),
       url(./assets/tablet/image-footer.jpg);
   }
+}
+
+/* TO DO 
+FIX THE FONT SIZES FOR MOBILE
+*/
+
+/* Moblie */
+@media (max-width: 450px) {
+
+  main {
+    grid-template-rows: 10rem 36.4rem 12.4rem;
+  }
+
+  body, html {
+    height: 2380px;
+  }
+
+  header {
+    height: 830px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+  .meet-content {
+    max-width: 23.125rem;
+  }
+
+  .header-content {
+    overflow: unset;
+  }
+
+  .header-buttons {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .download {
+    margin: 1rem 0;
+  }
+
+  .image-container {
+    display: flex;
+    gap: 2rem;
+    /* max-width: 450px;    */
+  }
+
+  .box-img {
+    width: 281px;
+    height: 273px;
+  }
+
 }
