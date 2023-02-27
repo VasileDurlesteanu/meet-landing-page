@@ -407,7 +407,9 @@ footer {
 }
 
 /* TO DO 
-FIX THE FONT SIZES FOR MOBILE
+FIX THE FOOTER FONT SIZES 
+& NUMBERS FOR MOBILE
+& buttons font sizes
 */
 
 /* Moblie */
@@ -418,7 +420,7 @@ FIX THE FONT SIZES FOR MOBILE
   }
 
   body, html {
-    height: 2380px;
+    height: 3380px;
   }
 
   header {
@@ -427,13 +429,22 @@ FIX THE FONT SIZES FOR MOBILE
 
   h1 {
     font-size: 3.5rem;
+    max-width: 400px;
   }
-  .meet-content {
-    max-width: 23.125rem;
+
+  .meet-content, .send-messages-content {
+    font-size: 22px;
+    max-width: 500px;
+    line-height: 1.5;
+  }
+
+  .mobile-br {
+    display: block;
   }
 
   .header-content {
     overflow: unset;
+    margin-top: 30px;
   }
 
   .header-buttons {
@@ -446,10 +457,14 @@ FIX THE FONT SIZES FOR MOBILE
     margin: 1rem 0;
   }
 
+  main {
+    margin-top: 100px;
+  }
+
   .image-container {
     display: flex;
     gap: 2rem;
-    /* max-width: 450px;    */
+    margin-top: 100px;
   }
 
   .box-img {
@@ -457,4 +472,16 @@ FIX THE FONT SIZES FOR MOBILE
     height: 273px;
   }
 
+  .main-content {
+    margin-top: 130px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 46px;
+    line-height: 1.2;
+  }
 }
