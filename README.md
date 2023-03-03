@@ -24,13 +24,13 @@ Users should be able to:
 
 ### Screenshots
 ### Desktop
-![](./starter-code/assets/desktop/desktop-screenshot.png)
+![](./assets/desktop/desktop-screenshot.png)
 
 ### Tablet
-![](./starter-code/assets/tablet/tablet-screenshot.png)
+![](./assets/tablet/tablet-screenshot.png)
 
 ### Mobile
-![](./starter-code/assets/mobile/mobile-screenshot.png)
+![](./assets/mobile/mobile-screenshot.png)
 
 ### Links
 
